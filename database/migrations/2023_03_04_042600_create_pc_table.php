@@ -24,7 +24,7 @@ class CreatePcTable extends Migration
             $table->text('power_supply');
             $table->text('cooler');
             $table->text('comp_case');
-            $table->integer('image');
+            $table->string('image')->default(null);
             $table->integer('price');
             $table->timestamps();
         });
